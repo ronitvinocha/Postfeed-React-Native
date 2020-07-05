@@ -193,7 +193,7 @@ function Item({ item }) {
     }
     else
     {
-      setPosts(orignalPosts.filter(orignalPosts => orignalPosts.name.startsWith(text)));
+      setPosts(orignalPosts.filter(orignalPosts => orignalPosts.name.toUpperCase().startsWith(text.toUpperCase())));
     }
   }
   const [error, seterror] = useState("")
